@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public myDateOfBirth: String;
+
+  ionViewDidEnter() {
+    this.myDateOfBirth = "1994-10-03";
+  }
 }

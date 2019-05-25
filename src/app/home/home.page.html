@@ -1,14 +1,70 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Mikael von Ketelhodt
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-avatar class="avatar">
+      <img
+        width="256"
+        src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+      />
+    </ion-avatar>
+    A FullStack Software Engineer.
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Firstname</ion-label>
+      Mikael
+    </ion-item>
+    <ion-item>
+      <ion-label>Lastname</ion-label>
+      von Ketelhodt
+    </ion-item>
+    <ion-item>
+      <ion-label>Github</ion-label>
+      mikstur
+    </ion-item>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime
+        disabled
+        displayFormat="MM/DD/YYYY"
+        [(ngModel)]="myDateOfBirth"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding">
+    <h2>My Skills</h2>
+    <ion-chip>
+      <ion-label>Switching tabs really fast</ion-label>
+    </ion-chip>
+
+    <ion-chip color="danger">
+      <ion-label>Internet Explorer</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Location Services</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="code"></ion-icon>
+      <ion-label>JavaScript</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-avatar>
+        <img src="assets/icon/stark-icon.png" />
+      </ion-avatar>
+      <ion-label>High Valyrian</ion-label>
+    </ion-chip>
   </div>
 </ion-content>
