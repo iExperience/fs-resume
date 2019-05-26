@@ -12,4 +12,8 @@ export class HomePage {
   ionViewDidEnter() {
     this.myDateOfBirth = "1994-10-03";
   }
+
+  pressMe() {
+    alert("Hi!!");
+  }
 }
